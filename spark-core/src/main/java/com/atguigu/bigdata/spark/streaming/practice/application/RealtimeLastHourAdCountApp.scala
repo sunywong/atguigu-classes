@@ -46,6 +46,8 @@ object RealtimeLastHourAdCountApp {
 
     filterAdsLogDStream.cache()
 
+
+
     //6.对没有被加入黑名单的用户统计当前批次单日各个用户对各个广告点击的总次数,
     // 并更新至 MySQL
     // 之后查询更新之后的数据,判断是否超过 100 次。
